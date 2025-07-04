@@ -113,6 +113,10 @@ ol {
   padding: 1px;
 }
 
+.search-form__label:has(.search-form__checkbox):hover .search-form__label-text {
+  text-decoration: underline;
+}
+
 .search-form__label:has(.search-form__textfield:focus-visible) {
   outline: 1px solid #fff;
 }
@@ -209,7 +213,7 @@ ol {
   width: 194px;
   height: 34px;
   padding: 6px 0;
-  align-self: flex-end;
+  align-self: self-end;
   flex-shrink: 0;
 }
 
@@ -220,6 +224,7 @@ ol {
   gap: 26px;
   height: 534px;
   justify-self: end;
+  flex-grow: 1;
 }
 
 .title {
@@ -292,6 +297,7 @@ ol {
 
 .content__video-card-description-container {
   width: 196px;
+  flex-grow: 1;
 }
 
 .content__video-card-title {
